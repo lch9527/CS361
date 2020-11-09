@@ -1,2 +1,2 @@
 # CS361
-CS361 team 02
+Zhangyao Zhou
