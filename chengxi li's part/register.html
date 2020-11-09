@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <! [endif]-->
+    <title>Book Store</title>
+    <meta charset="UTF-8">
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="css\sbmain.css" rel="stylesheet">
+</head>
+    
+<body>
+    <!--header top-->
+        <div class="menu">
+            <div class="container-fluid">
+		      <div class="navbar-header">
+                <div>
+                <span style="float:right; padding:none">Have an account?&nbsp;<a href="login.html">Login</a></span>
+                </div>
+        </div>
+    </div>
+    <!--end Header-->
+    
+<main>
+    <div class="wrapper fadeInDown">
+        <div id="formContent" style="max-width: 750px">
+            <div class="fadeIn first">
+                <h2>Create an Account</h2>
+                <p>Welcome to use Book Store</p>
+            </div>
+            <!-- Registration Form -->
+            <form method="post" action="./login.html" id="contact-form" onsubmit="">
+                <input type="text" style="text-align: left" placeholder="Your Name" name="name" id="name" class="fadeIn second" required><br>
+                <input type="text" style="text-align: left" placeholder="Phone Number" name="phone" id="phone" class="fadeIn third" required><br>
+                <input type="text" style="text-align: left" placeholder="Email Address" name="email" id="email" pattern=".+@.+" class="fadeIn fourth" required><br><!-- <p>Password must not be the same as username</p> -->
+                <input type="text" style="text-align: left" placeholder="Password" name="pw" id="pw" class="fadeIn fifth" required><br>
+                <p style="font-size:0.85rem; margin-bottom:0.2rem">Must be at least 8 characters, contain at least 1 uppercase character, and at least 1 number</p>
+                <input type="submit" class="fadeIn fourth" value="Register" onclick="javascript:location.href='login.html'"/>
+            </form>
+            
+        </div>
+    </div>                                                                                              
+</main>
+        
+ <footer>
+        <div id="footer">
+            <div id="copyright"><br>
+                <section id="copyright">Copyright &copy; 2020 Book Store</section><br>
+            </div>
+        </div>
+    </footer>
+    
+    <script src=".scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src=".scripts/popper.min.js"></script>
+    <script src=".scripts/bootstrap.min.js"></script> 
+</body>
+</html>

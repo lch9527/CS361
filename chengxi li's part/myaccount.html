@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0058)https://www.w3schools.com/w3css/tryw3css_examples_mail.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>W3.CSS</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./myaccount_files/w3.css">
+<link href="./myaccount_files/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./myaccount_files/font-awesome.min.css"><style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif;}
+.w3-bar-block .w3-bar-item{padding:16px}
+
+</style>
+</head><body>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>W3.CSS Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./361project/w3.css">
+    <link rel="stylesheet" href="./361project/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="./361project/css">
+    <link rel="stylesheet" href="./361project/font-awesome.min.css">
+    <style>
+        html, body, h1, h2, h3, h4, h5 {
+            font-family: "Open Sans", sans-serif
+        }
+    </style>
+</head>
+
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="file:///C:/Users/Ash/Desktop/class/CS361/project/361project.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Main page</a>
+        <a href="file:///C:/Users/Ash/Desktop/class/CS361/project/myaccount.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="person info"></i></i>person info</a></a>
+        <a href="file:///C:/Users/Ash/Desktop/class/CS361/project/Page-1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"></i>point manage</a></a>
+        <a href="file:///C:/Users/Ash/Desktop/class/CS361/project/login.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"></i>Login/logout</a></a>
+    </div>
+    <a href="https:" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+        <img src="./361project/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+    </a>
+</div>
+
+
+
+
+           <!-- Modal that pops up when you click on "New Message" -->
+           <div id="id01" class="w3-modal" style="z-index:4">
+               <div class="w3-modal-content w3-animate-zoom">
+                   <div class="w3-container w3-padding w3-red">
+                       <span onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" class="w3-button w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
+                       <h2>Send Mail</h2>
+                   </div>
+                   <div class="w3-panel">
+                       <label>To</label>
+                       <input class="w3-input w3-border w3-margin-bottom" type="text">
+                       <label>From</label>
+                       <input class="w3-input w3-border w3-margin-bottom" type="text">
+                       <label>Subject</label>
+                       <input class="w3-input w3-border w3-margin-bottom" type="text">
+                       <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="What&#39;s on your mind?">
+                       <div class="w3-section">
+                           <a class="w3-button w3-red" onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;">Cancel &nbsp;<i class="fa fa-remove"></i></a>
+                           <a class="w3-button w3-right" onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;">Send &nbsp;<i class="fa fa-paper-plane"></i></a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Overlay effect when opening the side navigation on small screens -->
+           <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor: pointer; display: none;" title="Close Sidemenu" id="myOverlay"></div>
+
+           <!-- Page content -->
+           <div class="w3-main" style="margin-left:320px;">
+               <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-top" onclick="w3_open()"></i>
+               <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;"><i class="fa fa-pencil"></i></a>
+
+               <div id="Borge" class="w3-container person" style="display: block;">
+                   <br>
+                   <img class="w3-round  w3-animate-top" src="./myaccount_files/avatar3.png" style="width:20%;">
+                   <h5 class="w3-opacity">username</h5>
+                   <h4><i class="fa fa-clock-o"></i> total point:</h4>
+                   <!-- 回复按钮 -->
+                   <a class="w3-button" href="">Reply<i class="w3-padding fa fa-mail-reply"></i></a>
+                   <a class="w3-button" href="">Forward<i class="w3-padding fa fa-arrow-right"></i></a>
+                   <hr>
+                   <p>个人信息</p>
+                   <p>My book list:</p>
+                   <p> <br></p>
+               </div>
+
+               <div id="Jane" class="w3-container person" style="display: none;">
+                   <br>
+                   <img class="w3-round w3-animate-top" src="./myaccount_files/avatar5.png" style="width:20%;">
+                   <h5 class="w3-opacity">Subject: None</h5>
+                   <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+                   <a class="w3-button">Reply<i class="w3-padding fa fa-mail-reply"></i></a>
+                   <a class="w3-button">Forward<i class="w3-padding fa fa-arrow-right"></i></a>
+                   <hr>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                   <p>Forever yours,<br>Jane</p>
+               </div>
+
+               <div id="John" class="w3-container person" style="display: none;">
+                   <br>
+                   <img class="w3-round w3-animate-top" src="./myaccount_files/avatar2.png" style="width:20%;">
+                   <h5 class="w3-opacity">Subject: None</h5>
+                   <h4><i class="fa fa-clock-o"></i> From John Doe, Sep 23, 2015.</h4>
+                   <a class="w3-button">Reply<i class="w3-padding fa fa-mail-reply"></i></a>
+                   <a class="w3-button">Forward<i class="w3-padding fa fa-arrow-right"></i></a>
+                   <hr>
+                   <p>Welcome.</p>
+                   <p>That's it!</p>
+               </div>
+
+           </div>
+
+           <script>
+               var openInbox = document.getElementById("myBtn");
+               openInbox.click();
+
+               function w3_open() {
+                   document.getElementById("mySidebar").style.display = "block";
+                   document.getElementById("myOverlay").style.display = "block";
+               }
+
+               function w3_close() {
+                   document.getElementById("mySidebar").style.display = "none";
+                   document.getElementById("myOverlay").style.display = "none";
+               }
+
+               function myFunc(id) {
+                   var x = document.getElementById(id);
+                   if (x.className.indexOf("w3-show") == -1) {
+                       x.className += " w3-show";
+                       x.previousElementSibling.className += " w3-red";
+                   } else {
+                       x.className = x.className.replace(" w3-show", "");
+                       x.previousElementSibling.className =
+                           x.previousElementSibling.className.replace(" w3-red", "");
+                   }
+               }
+
+               openMail("Borge")
+               function openMail(personName) {
+                   var i;
+                   var x = document.getElementsByClassName("person");
+                   for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";
+                   }
+                   x = document.getElementsByClassName("test");
+                   for (i = 0; i < x.length; i++) {
+                       x[i].className = x[i].className.replace(" w3-light-grey", "");
+                   }
+                   document.getElementById(personName).style.display = "block";
+                   event.currentTarget.className += " w3-light-grey";
+               }
+           </script>
+
+           <script>
+               var openTab = document.getElementById("firstTab");
+               openTab.click();
+           </script>
+
+
+</body></html>

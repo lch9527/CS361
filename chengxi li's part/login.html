@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <! [endif]-->
+    <title>Book Store</title>
+    <meta charset="UTF-8">
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="./361project/w3.css">
+    <link rel="stylesheet" href="./361project/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="./361project/css">
+    <link rel="stylesheet" href="./361project/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="css\sbmain.css" rel="stylesheet">
+</head>
+    
+<body>
+    <!--header top-->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="./page-2_files/index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Main page</a>
+            <a href="./myaccount.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="person info">person info</a>
+            <a href="./Page-1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings">point manage</a>
+            <a href="./login.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages">Login/logout</a>
+            <a href="https:" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+                <img src="./361project/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+            </a>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p> </p><br />
+                <p> </p>
+            </div>
+        </div>
+    </div>
+    <!--end Header-->
+
+    <main>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Tabs Titles -->
+                <!-- Icon -->
+                <div class="fadeIn first">
+                    <h2>Account Login</h2>
+                </div>
+                <!-- Login Form -->
+                <form action="./page-2_files/index.html">
+                    <input type="text" id="login" class="fadeIn.second" name="login" placeholder="Account">
+                    <input type="text" id="password" class="fadeIn.third" name="login" placeholder="Password">
+                    <input type="submit" class="fadeIn.fourth" value="Login">
+                </form>
+                <form action="./register.html">
+                    <input type="submit" class="fadeIn.fifth" value="Account Registion">
+                </form>
+                <!-- Remind Password -->
+                <div id="formFooter">
+                    <a class="underlineHover" href="#" style="text-decoration: none">Reset Password</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <div id="copyright">
+                <br>
+                <section id="copyright">Copyright &copy; 2020 Book Store</section><br>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="./scripts/popper.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+</body>
+</html>
