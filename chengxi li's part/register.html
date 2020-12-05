@@ -36,13 +36,13 @@
                 <p>Welcome to use Book Store</p>
             </div>
             <!-- Registration Form -->
-            <form method="post" action="./login.html" id="contact-form" onsubmit="">
+            <form method="post" action="cust_insert.php" id="contact-form" onsubmit="">
                 <input type="text" style="text-align: left" placeholder="Your Name" name="name" id="name" class="fadeIn second" required><br>
                 <input type="text" style="text-align: left" placeholder="Phone Number" name="phone" id="phone" class="fadeIn third" required><br>
-                <input type="text" style="text-align: left" placeholder="Email Address" name="email" id="email" pattern=".+@.+" class="fadeIn fourth" required><br><!-- <p>Password must not be the same as username</p> -->
+                <input type="text" style="text-align: left" placeholder="Address" name="email" id="email" pattern=".+@.+" class="fadeIn fourth" required><br><!-- <p>Password must not be the same as username</p> -->
                 <input type="text" style="text-align: left" placeholder="Password" name="pw" id="pw" class="fadeIn fifth" required><br>
                 <p style="font-size:0.85rem; margin-bottom:0.2rem">Must be at least 8 characters, contain at least 1 uppercase character, and at least 1 number</p>
-                <input type="submit" class="fadeIn fourth" value="Register" onclick="javascript:location.href='login.html'"/>
+                <input type="submit" class="fadeIn fourth" name="submit" value="Register" onclick="javascript:location.href='login.html'"/>
             </form>
             
         </div>
